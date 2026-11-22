@@ -1,0 +1,6 @@
+{
+  "name": "Hanuman AI Video Editor — Module 1",
+  "description": "On-device video import and preview module built with React Native and Expo for Android, paired with a local browser test workbench.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

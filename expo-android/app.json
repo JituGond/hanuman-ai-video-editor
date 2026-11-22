@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Hanuman AI Video Editor",
+    "slug": "hanuman-ai-video-editor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.hanuman.videoeditor",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0D12"
+      },
+      "permissions": [
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Hanuman AI Video Editor to access your gallery videos on this device."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Hanuman AI Video Editor to read your device screen recordings and local videos.",
+          "savePhotosPermission": "Allow Hanuman AI Video Editor to save imported video copies inside app storage.",
+          "isAccessMediaLocationEnabled": false,
+          "granularPermissions": ["video"]
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ]
+    ]
+  }
+}

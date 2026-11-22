@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- Required only on Android 9 (API 28) and below when saving to public Movies/HanumanAI -->
+  <uses-permission
+    android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    android:maxSdkVersion="28" />
+
+  <!-- Package visibility for opening Android Gallery and system Video Player apps on Android 11+ -->
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.VIEW" />
+      <data android:mimeType="video/*" />
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.MAIN" />
+      <category android:name="android.intent.category.APP_GALLERY" />
+    </intent>
+  </queries>
+</manifest>
